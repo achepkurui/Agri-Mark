@@ -15,6 +15,7 @@ public class ListOfFarmsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_of_farms);
+        btnsubmit = (Button) findViewById(R.id.btnsubmit);
 
         btnsubmit.setOnClickListener(new View.OnClickListener() {
             @Override
