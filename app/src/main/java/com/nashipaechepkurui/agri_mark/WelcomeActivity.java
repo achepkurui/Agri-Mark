@@ -1,6 +1,7 @@
 package com.nashipaechepkurui.agri_mark;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,42 +10,43 @@ import android.widget.Toast;
 
 public class WelcomeActivity extends AppCompatActivity {
 
-    private Button btnlinkfarmer, btnlinksupplier;
+    // Splash screen timer
+    private static int SPLASH_TIME_OUT = 3000;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-        btnlinkfarmer = (Button) findViewById(R.id.btnfarmer);
-        btnlinksupplier = (Button)findViewById(R.id.btnsupplier);
+        new Handler().postDelayed(new Runnable() {
 
+            /*
+             * Showing splash screen with a timer. This will be useful when you
+             * want to show case your app logo / company
+             */
 
-        btnlinkfarmer.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Toast.makeText(WelcomeActivity.this, "Data has been sent to server", Toast.LENGTH_LONG).show();
-                btnlinkfarmer.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        startActivity(new Intent(WelcomeActivity.this,LoginActivity.class));
-                    }
-                });
+            public void run() {
+                // This method will be executed once the timer is over
+                // Start your app main activity
+                Intent i = new Intent(WelcomeActivity.this, RegistrationActivity.class);
+                startActivity(i);
 
-                btnlinksupplier.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Toast.makeText(WelcomeActivity.this, "data has been sent to server", Toast.LENGTH_LONG).show();
-                        startActivity(new Intent(WelcomeActivity.this, ListOfFarmsActivity.class));
-                    }
-                });
+                // close this activity
+                finish();
             }
-
-
-        });
-
-
-
-
-
+        }, SPLASH_TIME_OUT);
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+

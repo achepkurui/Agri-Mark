@@ -95,15 +95,16 @@
 
         <!-- Link to Login Screen -->
 
-        <Button
-            android:id="@+id/btnLinkToLoginScreen"
+        <TextView
+            android:id="@+id/tvLinkToLoginScreen"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dip"
-            android:background="@color/white"
             android:text="Already a member?Login"
             android:textAllCaps="false"
-            android:textColor="@color/green"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:textSize="15dp" />
     </LinearLayout>
     </ScrollView>

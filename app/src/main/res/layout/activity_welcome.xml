@@ -34,33 +34,8 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="80dp"
+            android:layout_height="400dp"
             android:src="@drawable/agrimark"/>
-
-
-        <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnfarmer"
-        android:layout_marginTop="40dip"
-        android:background="@color/white"
-        android:text="FARMER"
-        android:textAllCaps="false"
-        android:textColor="@color/green"
-        android:textSize="15dp" />
-
-
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnsupplier"
-        android:layout_marginTop="40dip"
-        android:background="@color/white"
-        android:text="SUPPLIER"
-        android:textAllCaps="false"
-        android:textColor="@color/green"
-        android:textSize="15dp" />
-
 
 
     </LinearLayout>

@@ -38,7 +38,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="phone"
+            android:hint="@string/phone"
             android:textColorHint="@color/white"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
@@ -66,16 +66,17 @@
             android:text="@string/btn_login"
             android:textColor="@color/green" />
 
-        <Button
-            android:id="@+id/btnLinkToRegisterScreen"
+        <TextView
+            android:id="@+id/tvLinkToRegisterScreen"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dip"
-            android:background="@color/white"
-            android:text="@string/btn_link_to_register"
+            android:text="Not yet a member?Get registered!"
             android:textAllCaps="false"
-            android:textColor="@color/green"
-            android:textSize="15dp" />
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
 
 
     </LinearLayout>

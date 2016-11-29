@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/green"
-    tools:context=".XFarmActivity">
+    tools:context=".AFarmActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -54,31 +54,27 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/transport"
-                android:layout_marginTop="10dp"/>
-
-            <TextView
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="PRODUCE"
-                android:id="@+id/tvproduce"
-                android:layout_below="@+id/editText"
-                android:textColor="@color/white"
-                android:layout_marginTop="10dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_height="wrap_content">
 
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/produce"
-                android:layout_marginTop="10dp"
-                android:layout_above="@+id/tvquantity"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tractor"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/rb1" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorry"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/rb2" />
+
+            </RadioGroup>
+
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -91,19 +87,25 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Available"
                 android:layout_marginTop="10dp"
-                android:id="@+id/rb1" />
+                android:id="@+id/rb3" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sold Out"
                 android:layout_marginTop="10dp"
-                android:id="@+id/rb2" />
+                android:id="@+id/rb4" />
+
+        </RadioGroup>
 
             <EditText
                 android:layout_width="match_parent"
@@ -124,14 +126,32 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
-            <Spinner
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/county"
+                android:text="Nakuru"
                 android:layout_marginTop="10dp"
-                android:layout_below="@+id/tvcounty"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:id="@+id/rb5" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uasin Gishu"
+                android:layout_marginTop="10dp"
+                android:id="@+id/rb6" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Narok"
+                android:layout_marginTop="10dp"
+                android:id="@+id/rb7" />
+            </RadioGroup>
+
 
             <Button
                 android:layout_width="fill_parent"
@@ -141,8 +161,8 @@
                 android:gravity="center_horizontal"
                 android:textColor="@color/green"
                 android:background="@color/white"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp" />
+                android:paddingTop="20dip"
+                android:layout_gravity="center_horizontal" />
 
         </LinearLayout>
     </ScrollView>

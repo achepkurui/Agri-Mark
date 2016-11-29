@@ -42,15 +42,16 @@
     <string name="lbl_forgot_password">Forgot password?</string>
     <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
     <string name="btn_register">register</string>
+    <string name="phone">phone</string>
     <string-array name="transport_array">
         <item>Lorry</item>
         <item>Tractor</item>
         <item>Pick-up</item>
     </string-array>
     <string-array name="county_array">
-      <item>Maize</item>
-      <item>Potatoes</item>
-      <item>Rice</item>
+        <item>Maize</item>
+        <item>Potatoes</item>
+        <item>Rice</item>
     </string-array>
 
 

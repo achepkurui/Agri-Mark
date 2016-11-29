@@ -1,0 +1,97 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GridLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_row="3"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/love_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/backdrop_title"
+        android:text="LIST OF PRODUCE"/>
+
+
+    <ImageView
+        android:id="@+id/Ivbackdrop"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/potatoes"
+        android:layout_row="0"
+        android:paddingBottom="20dp"
+        android:layout_gravity="left|top" />
+
+    <ImageView
+        android:id="@+id/Ivbackdrop1"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cabbages"
+        android:layout_row="0"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:layout_gravity="right|top" />
+
+    <ImageView
+        android:id="@+id/Ivbackdrop2"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/maize"
+        android:layout_row="1"
+        android:paddingBottom="20dp"
+        android:layout_gravity="left|top" />
+
+    <ImageView
+        android:id="@+id/Ivbackdrop3"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        android:layout_row="1"
+        android:paddingBottom="20dp"
+        android:src="@drawable/kalespinach"
+        android:layout_gravity="right|top" />
+
+    <ImageView
+        android:id="@+id/Ivbackdrop4"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        android:layout_row="2"
+        android:paddingBottom="20dp"
+        android:src="@drawable/carrots"
+        android:layout_gravity="left|top"/>
+
+    <ImageView
+        android:id="@+id/Ivbackdrop5"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        android:layout_row="2"
+        android:paddingBottom="20dp"
+        android:src="@drawable/onions"
+        android:layout_gravity="right|top"/>
+
+    <Button
+        android:id="@+id/btnsubmit1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@color/green"
+        android:text="SUBMIT"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white" />
+
+</GridLayout>

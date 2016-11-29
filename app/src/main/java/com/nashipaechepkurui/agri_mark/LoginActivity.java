@@ -1,7 +1,6 @@
 package com.nashipaechepkurui.agri_mark;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -9,21 +8,23 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
 public class LoginActivity extends AppCompatActivity {
     private EditText inputPhone, inputPassword;
     private ProgressBar progressBar;
-    private Button btnlink1, btnLogin;
+    private TextView tvlink1;
+    private Button btnLogin;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration);
+        setContentView(R.layout.activity_login);
         btnLogin = (Button) findViewById(R.id.btnlogin);
-        btnlink1 = (Button) findViewById(R.id.btnLinkToRegisterScreen);
+        tvlink1 = (TextView) findViewById(R.id.tvLinkToRegisterScreen);
         inputPhone = (EditText) findViewById(R.id.phone);
         inputPassword = (EditText) findViewById(R.id.password);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
@@ -31,18 +32,19 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, WelcomeActivity.class));
+                startActivity(new Intent(LoginActivity.this, ListOfProduceActivity.class));
             }
         });
-        btnlink1.setOnClickListener(new View.OnClickListener() {
+
+       tvlink1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, RegistrationActivity.class));
+                startActivity(new Intent(LoginActivity.this,RegistrationActivity.class));
             }
         });
 
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+       /* btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String email = inputPhone.getText().toString();
@@ -58,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
                     return;
                 }
             }
-        });
+        });*/
     }
 }
 
